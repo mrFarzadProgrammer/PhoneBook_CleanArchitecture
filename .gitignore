@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ApplicationPhoneBook/obj
+/DomainPhoneBook/obj
+/InfrastructurePhoneBook/obj
+/PersistencePhoneBook/obj
+/PhoneBook.Endpoint/obj
+/.vs/PhoneBook_CleanArchitecture/FileContentIndex
