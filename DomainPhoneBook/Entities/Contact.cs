@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DomainPhoneBook
+namespace DomainPhoneBook.Entities
 {
     public class Contact
     {
@@ -21,13 +21,13 @@ namespace DomainPhoneBook
 
         }
 
-        public Contact(string Name,string LastName,string PhoneNumber,string Company)
+        public Contact(string Name, string LastName, string PhoneNumber, string Company)
         {
             this.Name = Name;
             this.LastName = LastName;
             this.PhoneNumber = PhoneNumber;
             this.Company = Company;
-            this.CreateAt = DateTime.Now;
+            CreateAt = DateTime.Now;
         }
 
         public void Update(string Name, string LastName, string PhoneNumber, string Company)
