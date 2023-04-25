@@ -8,3 +8,16 @@
 /PersistencePhoneBook/obj
 /PhoneBook.Endpoint/obj
 /.vs/PhoneBook_CleanArchitecture/FileContentIndex
+/PhoneBook.Endpoint/bin/Debug/net5.0-windows
+/PhoneBook.Endpoint/PhoneBook.Endpoint.csproj
+/PhoneBook.Endpoint/PhoneBook.Endpoint.csproj.user
+/PersistencePhoneBook/bin/Debug/net5.0
+/DomainPhoneBook/bin/Debug/net5.0
+/DomainPhoneBook/Entities/Contact.cs
+/ApplicationPhoneBook/bin/Debug/net5.0
+/ApplicationPhoneBook/ApplicationPhoneBook.csproj
+/.vs/ProjectEvaluation/phonebook_cleanarchitecture.metadata.v6.1
+/.vs/ProjectEvaluation/phonebook_cleanarchitecture.projects.v6.1
+/.vs/PhoneBook_CleanArchitecture/DesignTimeBuild/.dtbcache.v2
+/.vs/PhoneBook_CleanArchitecture/v17/.futdcache.v2
+/.vs/PhoneBook_CleanArchitecture/v17/.suo
