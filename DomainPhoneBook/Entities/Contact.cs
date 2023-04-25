@@ -16,6 +16,7 @@ namespace DomainPhoneBook.Entities
         public string Description { get; private set; }
         public string PhoneNumber { get; private set; }
         public DateTime CreateAt { get; private set; }
+
         public Contact()
         {
 
