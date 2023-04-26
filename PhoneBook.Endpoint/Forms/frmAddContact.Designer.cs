@@ -1,4 +1,4 @@
-﻿namespace PhoneBook.Endpoint.Forms
+﻿namespace UI_winForm.Forms
 {
     partial class frmAddContact
     {
@@ -28,39 +28,111 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button2 = new System.Windows.Forms.Button();
-            btnAdd = new System.Windows.Forms.Button();
-            label1 = new System.Windows.Forms.Label();
-            rtxtDescription = new System.Windows.Forms.RichTextBox();
-            txtPhoneNumber = new System.Windows.Forms.TextBox();
-            txtCompany = new System.Windows.Forms.TextBox();
-            txtLastName = new System.Windows.Forms.TextBox();
-            txtName = new System.Windows.Forms.TextBox();
-            label5 = new System.Windows.Forms.Label();
-            label4 = new System.Windows.Forms.Label();
-            label3 = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
             نام = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            txtName = new System.Windows.Forms.TextBox();
+            txtLastName = new System.Windows.Forms.TextBox();
+            txtCompany = new System.Windows.Forms.TextBox();
+            txtPhoneNumber = new System.Windows.Forms.TextBox();
+            rtxtDescription = new System.Windows.Forms.RichTextBox();
+            label1 = new System.Windows.Forms.Label();
+            btnAdd = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
-            // button2
+            // نام
             // 
-            button2.Location = new System.Drawing.Point(331, 551);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(137, 23);
-            button2.TabIndex = 16;
-            button2.Text = "برگشت";
-            button2.UseVisualStyleBackColor = true;
+            نام.AutoSize = true;
+            نام.Location = new System.Drawing.Point(178, 97);
+            نام.Name = "نام";
+            نام.Size = new System.Drawing.Size(25, 18);
+            نام.TabIndex = 0;
+            نام.Text = "نام";
+            نام.Click += نام_Click;
             // 
-            // btnAdd
+            // label2
             // 
-            btnAdd.Location = new System.Drawing.Point(146, 551);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new System.Drawing.Size(128, 23);
-            btnAdd.TabIndex = 17;
-            btnAdd.Text = "ثبت مخاطب جدید";
-            btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += btnAdd_Click;
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(178, 164);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(88, 18);
+            label2.TabIndex = 0;
+            label2.Text = "نام خانوادگی";
+            label2.Click += label2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(178, 221);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(50, 18);
+            label3.TabIndex = 0;
+            label3.Text = "شرکت";
+            label3.Click += label3_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(178, 291);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(81, 18);
+            label4.TabIndex = 0;
+            label4.Text = "شماره تلفن";
+            label4.Click += label4_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(178, 359);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(62, 18);
+            label5.TabIndex = 0;
+            label5.Text = "توضیحات";
+            label5.Click += label5_Click;
+            // 
+            // txtName
+            // 
+            txtName.Location = new System.Drawing.Point(178, 89);
+            txtName.Name = "txtName";
+            txtName.Size = new System.Drawing.Size(322, 26);
+            txtName.TabIndex = 1;
+            txtName.TextChanged += txtName_TextChanged;
+            // 
+            // txtLastName
+            // 
+            txtLastName.Location = new System.Drawing.Point(178, 156);
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new System.Drawing.Size(322, 26);
+            txtLastName.TabIndex = 1;
+            txtLastName.TextChanged += txtLastName_TextChanged;
+            // 
+            // txtCompany
+            // 
+            txtCompany.Location = new System.Drawing.Point(178, 213);
+            txtCompany.Name = "txtCompany";
+            txtCompany.Size = new System.Drawing.Size(322, 26);
+            txtCompany.TabIndex = 1;
+            txtCompany.TextChanged += txtCompany_TextChanged;
+            // 
+            // txtPhoneNumber
+            // 
+            txtPhoneNumber.Location = new System.Drawing.Point(178, 283);
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.Size = new System.Drawing.Size(322, 26);
+            txtPhoneNumber.TabIndex = 1;
+            txtPhoneNumber.TextChanged += txtPhoneNumber_TextChanged;
+            // 
+            // rtxtDescription
+            // 
+            rtxtDescription.Location = new System.Drawing.Point(178, 356);
+            rtxtDescription.Name = "rtxtDescription";
+            rtxtDescription.Size = new System.Drawing.Size(322, 96);
+            rtxtDescription.TabIndex = 2;
+            rtxtDescription.Text = "";
+            rtxtDescription.TextChanged += rtxtDescription_TextChanged;
             // 
             // label1
             // 
@@ -68,98 +140,39 @@
             label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.Yellow;
             label1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            label1.Location = new System.Drawing.Point(187, 51);
+            label1.Location = new System.Drawing.Point(178, 39);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(150, 18);
-            label1.TabIndex = 15;
+            label1.TabIndex = 3;
             label1.Text = "افزودن مخاطب جدید";
+            label1.Click += label1_Click;
             // 
-            // rtxtDescription
+            // btnAdd
             // 
-            rtxtDescription.Location = new System.Drawing.Point(146, 368);
-            rtxtDescription.Name = "rtxtDescription";
-            rtxtDescription.Size = new System.Drawing.Size(322, 96);
-            rtxtDescription.TabIndex = 14;
-            rtxtDescription.Text = "";
+            btnAdd.Location = new System.Drawing.Point(178, 539);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(128, 23);
+            btnAdd.TabIndex = 4;
+            btnAdd.Text = "ثبت مخاطب جدید";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
-            // txtPhoneNumber
+            // button2
             // 
-            txtPhoneNumber.Location = new System.Drawing.Point(146, 295);
-            txtPhoneNumber.Name = "txtPhoneNumber";
-            txtPhoneNumber.Size = new System.Drawing.Size(322, 23);
-            txtPhoneNumber.TabIndex = 10;
-            // 
-            // txtCompany
-            // 
-            txtCompany.Location = new System.Drawing.Point(146, 225);
-            txtCompany.Name = "txtCompany";
-            txtCompany.Size = new System.Drawing.Size(322, 23);
-            txtCompany.TabIndex = 11;
-            // 
-            // txtLastName
-            // 
-            txtLastName.Location = new System.Drawing.Point(146, 168);
-            txtLastName.Name = "txtLastName";
-            txtLastName.Size = new System.Drawing.Size(322, 23);
-            txtLastName.TabIndex = 12;
-            // 
-            // txtName
-            // 
-            txtName.Location = new System.Drawing.Point(146, 101);
-            txtName.Name = "txtName";
-            txtName.Size = new System.Drawing.Size(322, 23);
-            txtName.TabIndex = 13;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(37, 371);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(54, 15);
-            label5.TabIndex = 5;
-            label5.Text = "توضیحات";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(37, 303);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(62, 15);
-            label4.TabIndex = 6;
-            label4.Text = "شماره تلفن";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(37, 233);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(37, 15);
-            label3.TabIndex = 7;
-            label3.Text = "شرکت";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(37, 176);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(69, 15);
-            label2.TabIndex = 8;
-            label2.Text = "نام خانوادگی";
-            // 
-            // نام
-            // 
-            نام.AutoSize = true;
-            نام.Location = new System.Drawing.Point(37, 109);
-            نام.Name = "نام";
-            نام.Size = new System.Drawing.Size(21, 15);
-            نام.TabIndex = 9;
-            نام.Text = "نام";
+            button2.Location = new System.Drawing.Point(178, 539);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(137, 23);
+            button2.TabIndex = 4;
+            button2.Text = "برگشت";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // frmAddContact
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(519, 622);
+            BackColor = System.Drawing.SystemColors.WindowFrame;
+            ClientSize = new System.Drawing.Size(528, 647);
             Controls.Add(button2);
             Controls.Add(btnAdd);
             Controls.Add(label1);
@@ -173,9 +186,12 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(نام);
+            Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             Name = "frmAddContact";
             RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             RightToLeftLayout = true;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             Text = "frmAddContact";
             ResumeLayout(false);
             PerformLayout();
@@ -183,18 +199,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox rtxtDescription;
-        private System.Windows.Forms.TextBox txtPhoneNumber;
-        private System.Windows.Forms.TextBox txtCompany;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label نام;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtCompany;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
+        private System.Windows.Forms.RichTextBox rtxtDescription;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button button2;
     }
 }

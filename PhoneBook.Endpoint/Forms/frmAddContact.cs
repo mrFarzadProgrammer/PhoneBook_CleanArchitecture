@@ -1,5 +1,4 @@
-﻿using ApplicationPhoneBook.Services.AddNewContact;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,35 +8,68 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PhoneBook.Endpoint.Forms
+namespace UI_winForm.Forms
 {
     public partial class frmAddContact : Form
     {
-        private readonly IAddNewContactService addNewContactService;
-
-        public frmAddContact(IAddNewContactService addNewContactService)
+        public frmAddContact()
         {
             InitializeComponent();
-            this.addNewContactService = addNewContactService;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            var result = addNewContactService.Execute(new AddNewContactDto
-            {
-                Name = txtName.Text,
-                LastName = txtLastName.Text,
-                PhoneNumber = txtPhoneNumber.Text,
-                Company = txtCompany.Text,
-                Description = rtxtDescription.Text,
-            });
+            
 
-            if (result.IsSuccess == true)
-            {
-                MessageBox.Show(result.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            MessageBox.Show(result.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void rtxtDescription_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtPhoneNumber_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtCompany_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtLastName_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void نام_Click(object sender, EventArgs e)
+        {
         }
     }
 }
